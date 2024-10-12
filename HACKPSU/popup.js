@@ -1,3 +1,4 @@
+window.addEventListener('DOMContentLoaded'), () => {
 console.log('This is a popup!');
 document.getElementById('sendButton').addEventListener('click', async () => {
     const userInput = document.getElementById('userInput').value;
@@ -21,4 +22,4 @@ document.getElementById('sendButton').addEventListener('click', async () => {
     // Display ChatGPT's response in the extension
     document.getElementById('chatResponse').innerText = output;
   });
-  
+}
