@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded'), () => {
 console.log('This is a popup!');
-document.getElementById('sendButton').addEventListener('click', async () => {
+document.getElementById('scanButton').addEventListener('click', async () => {
     const userInput = document.getElementById('userInput').value;
   
     // Call the OpenAI API
@@ -11,7 +11,7 @@ document.getElementById('sendButton').addEventListener('click', async () => {
         'Authorization': 'Bearer YOUR_OPENAI_API_KEY'
       },
       body: JSON.stringify({
-        model: "gpt-4",  // Or gpt-3.5-turbo based on your plan
+        model: "gpt-4",
         messages: [{role: "user", content: userInput}]
       })
     });
