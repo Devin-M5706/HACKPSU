@@ -11,12 +11,3 @@ window.addEventListener('DOMContentLoaded', async () => {
 		
 	})
 });
-
-/*
-document.getElementById('scanButton').addEventListener('click', async () => {
-    
-  
-  /*
-    
-  });
-*/
