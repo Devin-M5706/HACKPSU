@@ -6,5 +6,7 @@ genai.configure({
 });
 
 model = genai.GenerativeModel("gemini-1.5-flash");
-response = model.generate_content("Do you like cookies?");
-print(response.text);
+
+export function getResponse(prompt){
+  return model.generate_content(prompt);;
+}
