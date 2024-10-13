@@ -1,0 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 90vw;
+    height: 90vh;
+    background-color: blueviolet;
+}
