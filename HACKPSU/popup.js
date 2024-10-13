@@ -1,4 +1,6 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
+	const article = await extract("https://www.cnn.com/2024/10/12/politics/helene-milton-early-voting-north-carolina-florida-south-carolina/index.html");
+	document.body.innerHTML += article;
 	document.getElementById('scanButton').addEventListener('click', async (ev) => {
 		const userInput = "Pick a random number between 0 and 100";
   
