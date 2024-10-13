@@ -1,7 +1,9 @@
 window.addEventListener('DOMContentLoaded'), () => {
 console.log('This is a popup!');
 document.getElementById('scanButton').addEventListener('click', async () => {
-    const userInput = document.getElementById('userInput').value;
+    
+  
+  /*const userInput = document.getElementById('userInput').value;
   
     // Call the OpenAI API
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -21,5 +23,6 @@ document.getElementById('scanButton').addEventListener('click', async () => {
   
     // Display ChatGPT's response in the extension
     document.getElementById('chatResponse').innerText = output;
+    */
   });
 }
