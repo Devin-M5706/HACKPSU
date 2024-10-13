@@ -1,3 +1,8 @@
+window.addEventListener("DOMContentLoaded", async () => {
+	document.getElementById("scanButton").addEventListener("click", async () => {
+		alert(await chrome.tabs.query({ active: true, lastFocusedWindow: true }));
+	});
+});
 async function fetchArticleContent(url) {
     try {
       const response = await fetch(url);

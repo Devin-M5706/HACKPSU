@@ -4,33 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <script type="module">
-    import { extract } from "https://esm.sh/@extractus/article-extractor@latest"
-  
-    const loadFeed = async (url) => {
-      const data = await extract(url, {
-        descriptionLengthThreshold: 120,
-        contentLengthThreshold: 300
-      }, {
-        proxy: null
-      })
-      return Object.assign(Object.create(null), data) // use pure object to hold data
-    }
-  
-    const logURL = async () => {
-        // const feedurl = await chrome.tabs.query({active: true, lastFocusedWindow: true});
-        const feedurl = "https://www.cnn.com/2024/10/12/politics/helene-milton-early-voting-north-carolina-florida-south-carolina/index.html";
-        console.log(feedurl)
-        try {
-          const oembed = await loadFeed(feedurl)
-          console.log(JSON.stringify(oembed, undefined, '  '))
-        } catch (err) {
-          console.log(err.message)
-        }
-    }
-    document.logURL = logURL;
-  </script>
-  <script src="popup.js"></script>
+  <script src="scraper.js"></script>
   <title>Factly</title>
 </head>
 <body>
@@ -44,7 +18,4 @@
     <progress id="trustworthyness" value="0" max="100" disabled></progress>
   </div>
 </body>
-
-
-
 </html>
