@@ -1,4 +1,4 @@
-const userInput = "Using the following article, give a response in json format with a key called 'claims' of 2D lists containing the claim the article makes along with the accuracy of the claim being true, false, or inaccurate. The second key in the main object should be called 'accuracy' with a percentage rating of how trustworthy the article is.\n\n";
+const userInput = "For each major controversial claim in the following article, search the web for at least 20 sources and return the following (Keep all text the same and do not deviate from this format):\n1. CLAIM TEXT: Claim text\n2. TRUTH VALUE: Number of sources that agree with the claim divided by the total sources checked\n3. Total sources: Total number of sources checked.\n\n";
 
 // Call the OpenAI API
 async function consultTheGPT(article) {
