@@ -1,15 +1,30 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#scanButton{
-    margin: 20px;
-    padding: 20px;
+
+.title {
+    margin: auto;
+    width: 150pt;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
 }
-.container{
-    width: 90vw;
-    height: 90vh;
-    background-color: blueviolet;
+
+.title > img {
+    height: 50%;
+    margin: auto 0pt;
+}
+
+.title > h1 {
+    font-size: xx-large;
+}
+
+#scanButton{
+    /* margin: 20px; */
+    padding: 20pt;
+}
+
+.response > p {
+    margin-bottom: 0;
 }
