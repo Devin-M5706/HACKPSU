@@ -1,30 +1,46 @@
-*{
-    box-sizing: border-box;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* styles.css */
+body {
+    /* Assuming this is the class for your extension box */
+.extension-box {
+    background-color: hsl(74, 82%, 37%); /* Change to your desired background color */
+    border: 1px solid #54cc0e; /* Optional: add a border */
+    border-radius: 4px; /* Adjust the radius to your preference */
+    padding: 20px; /* Optional: add padding for spacing */
+    box-shadow: 0 4px 8px rgba(255, 5, 5, 0.1); /* Optional: add shadow for depth */
 }
 
-.title {
-    margin: auto;
-    width: 150pt;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
 }
 
-.title > img {
-    height: 50%;
-    margin: auto 0pt;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(173, 216, 230, 0.3); /* Translucent light blue */
+    padding: 20px;
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Glass-like blur effect */
 }
 
-.title > h1 {
-    font-size: xx-large;
+button {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent blue */
+    color: rgb(5, 13, 128);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px; /* Rounded corners */
 }
 
-#scanButton{
-    /* margin: 20px; */
-    padding: 20pt;
+button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Full opacity on hover */
 }
 
-.response > p {
-    margin-bottom: 0;
+#dataContainer {
+    margin-top: 20px;
+    color: #333;
+    background: rgba(5, 212, 115, 0.5); /* Light translucent white background */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for content */
+    backdrop-filter: blur(5px); /* Light blur to enhance readability */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Additional shadow for better contrast */
 }
