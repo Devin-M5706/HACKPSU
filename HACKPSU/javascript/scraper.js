@@ -1,6 +1,12 @@
+// import { consultTheGPT } from "chatgpt.js"
+
 window.addEventListener("DOMContentLoaded", async () => {
 	document.getElementById("scanButton").addEventListener("click", async () => {
-		alert(await chrome.tabs.query({ active: true, lastFocusedWindow: true }));
+	  chrome.tabs.query({ active: true, lastFocusedWindow: true }).then(async (p) => {
+      const url = p[0]["url"]
+      const data = await fetchArticleContent(url);
+      consultTheGPT(data);
+    })
 	});
 });
 async function fetchArticleContent(url) {
