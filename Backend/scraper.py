@@ -1,5 +1,4 @@
 from newspaper import Article
-import requests
 
 def get_pageData(url: str) -> str:
     article = Article(url)
@@ -7,4 +6,4 @@ def get_pageData(url: str) -> str:
     article.parse()
     return article.text
 
-# print(get_pageData("https://www.cnn.com/2024/10/12/climate/hurricane-milton-helene-florida-homes/index.html"))
+print(get_pageData("https://www.cnn.com/2024/10/12/climate/hurricane-milton-helene-florida-homes/index.html"))
