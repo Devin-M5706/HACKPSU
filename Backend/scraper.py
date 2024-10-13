@@ -1,4 +1,5 @@
 from newspaper import Article
+import requests
 
 def get_pageData(url: str) -> str:
     article = Article(url)

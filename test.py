@@ -1,6 +1,10 @@
 import ollama
 
-url = "https://www.youtube.com/watch?v=Nox89Narr84"
+something = '''
+
+'''
+
+url = something
 
 stream = ollama.chat(
     model ='llama3.2',
@@ -10,3 +14,4 @@ stream = ollama.chat(
 
 for chunk in stream:
     print(chunk['message']['content'],end='', flush=True)
+    output = chunk
