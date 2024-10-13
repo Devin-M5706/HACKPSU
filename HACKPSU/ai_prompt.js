@@ -1,2 +1,0 @@
-ai_prompt=
-"Please check this article: ${article} For each major claim in the article, search the web and return the following (Keep all text the same and do not deviate from this format): 1. CLAIM TEXT: Claim text   2. TRUTH VALUE: Number of sources that agree with the claim divided by the total sources checked    3. TOTAL SOURCES: Total number of sources checked";

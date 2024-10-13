@@ -7,6 +7,6 @@ genai.configure({
 
 model = genai.GenerativeModel("gemini-1.5-flash");
 
-export function getResponse(prompt){
+export function getGEMResponse(prompt){
   return model.generate_content(prompt);;
 }
